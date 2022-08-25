@@ -28,7 +28,7 @@ init();
 function todoList(e){
   e.preventDefault();
 
-  let tareaUser = $input.value;
+  let tareaUser = $input.value.trim();
 
   if(!tareaUser.length){
     alert('No ingresaste nada, no se permite agregar tareas VACIAS.');
