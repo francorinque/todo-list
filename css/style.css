@@ -1,0 +1,139 @@
+*,::after,::before 
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body 
+{
+	background-color: #222;
+	color: whitesmoke;
+}
+
+
+.section 
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	background-color: #222222;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23e2e2e2' fill-opacity='0.03'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.content 
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	width: 300px;
+	min-width: 250px;
+
+}
+
+.cards
+{
+	width: 100%;
+	min-height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+
+}
+
+.borrarTodo
+{
+	height: 30px;
+	padding: 0 10px;
+	width: 100%;
+	border: none; 
+	border-radius: 2px;
+	font-weight: bold;
+	color: hsl(0, 100%, 67%);
+}
+
+
+.form
+{
+	width: 100%;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+
+.ul 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	flex-direction: column;
+	padding: 0;
+	list-style-type: none;
+	width: 100%;
+}
+
+.ul li 
+{
+	width: 100%;
+	height: 30px;
+	padding: 0 10px;
+	background-color: whitesmoke;
+	color: #222;
+	border-radius: 2px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.ul li img 
+{
+	width: 15px;
+	object-fit: cover;
+	color: #ccc;
+
+}
+
+
+.ul li img:hover 
+{
+	color: red;
+}
+
+.hide 
+{
+	display: none;
+}
+
+.form input[type="submit"]
+{
+	display: inline-block;
+	border: none;
+	border-radius: 2px;
+}
+
+
+.input,
+.form  input[type="submit"]{
+	flex:1;
+	height: 100%;
+	outline: none;
+	color: #222;
+
+}
+
+.input 
+{
+	flex: 2;
+	padding: 0 5px;
+}
