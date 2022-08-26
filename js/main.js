@@ -97,4 +97,5 @@ function borrarTarea(e){
   listaDeTareas = listaDeTareas.filter(tarea => tarea.tareaId !== filtrarId);
   renderTareas(listaDeTareas);
   saveLocalStorage(listaDeTareas);
+  btnBorrarTodo(listaDeTareas);
 }
